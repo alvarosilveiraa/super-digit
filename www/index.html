@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dijkstra</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h3>Super Digit</h3>
+  </header>
+  <main>
+    <form onsubmit="main.submit(event)">
+      <button onclick="main.clear()" type="button" class="btn btn-clear" disabled>
+        <img src="icons/close.svg" alt="Clear">
+      </button>
+      <input type="text" placeholder="Ex: 9875 1">
+      <button onclick="main.upload()" type="button" class="btn btn-upload">
+        <img src="icons/upload.svg" alt="Upload">
+      </button>
+    </form>
+    <div class="content">
+      <div class="in col-50">
+        <h4>Entrada</h4>
+      </div>
+      <div class="out col-50">
+        <h4>Saída</h4>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Alvaro Silveira
+  </footer>
+
+  <script type="text/javascript" src="js/lib/SuperDigit.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

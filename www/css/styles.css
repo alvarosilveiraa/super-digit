@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #787878;
+  background-color: #fcfcfc;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f4f4f4;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-clear {
+  left: -45px;
+}
+
+.btn-upload {
+  right: -45px;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
+
+main form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 40px;
+  margin-left: -250px;
+  margin-top: -20px;
+  transition: top 200ms;
+}
+
+main form input {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f4f4f4;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main form input[disabled], .btn-clear[disabled], .btn-upload[disabled] {
+  cursor: not-allowed;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+main .content {
+  overflow: hidden;
+  opacity: 0;
+  max-width: 800px;
+  line-height: 24px;
+  margin: 100px auto;
+  transition: opacity 200ms;
+}
+
+main .content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+main .content p {
+  overflow: hidden;
+  text-indent: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  background-color: white;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
