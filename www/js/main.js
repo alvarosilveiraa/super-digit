@@ -78,4 +78,4 @@ class Main {
     this.contentOut.appendChild(p);
   }
 }
-let main = new Main();
+const main = new Main();
